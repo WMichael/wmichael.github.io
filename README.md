@@ -1,2 +1,2 @@
 # My Profile
-[Link to the Profile](wmichael.github.io)
+[Link to the Profile](https://wmichael.github.io)
