@@ -1,35 +1,78 @@
 body {
   font-family: sans-serif;
-  background-color: #444444
+  background-color: ;
 }
+
+/* Cover styling*/
 
 .cover {
   text-align: center;
-  border: 1px solid black;
-  height: 350px;
-  padding: 50px;
-  color: #d5d5d3
+  height: 600px;
+  padding: 150px; background-size: cover;
+  background-position: top;
+  text-shadow: 2px 1px 7px #000000;
 }
 
-.nav {
+.cover h1 {
+  background-color: rgba(255, 255, 255, 0.50);
+  display: inline-block;
+
+}
+
+.cover-home {
+  /* color: #FF3434; */
+  color: #6700A0;
+  background-image: url(../images/header.jpg);
+}
+
+/* Navigation styling*/
+
+nav {
   height: 50px;
   background-color: #d5d5d3;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content:center;
+  border: 1px solid darkgrey;
 }
 
-.nav a {
+nav a {
   padding: 10px 25px;
-  margin: 0px 5px;
+  margin: 15px;
   text-align: center;
-  border: 1px solid black;
   height: 100%;
   text-decoration: none;
-  color: #252525;
+  color: black;
+  border: 2px black solid;
+  border-radius: 3px;
+  background-color: darkgrey;
 }
 
-.nav a:hover {
-  color: #fdd947;
+nav a:hover {
+  color: white;
+  border-color: white;
+}
+
+/* Content styling*/
+.content {
+  background-color: #d5d5d3;
+  border: 1px solid darkgrey;
+  padding: 5px 10px;
+  margin: 20px 0px;
+
+}
+
+.profile-pic {
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  width: 200px;
+  border: 5px black solid;
+
+}
+
+/* Style overiding*/
+ .row {
+    justify-content: space-around;
 }
