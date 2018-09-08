@@ -1,4 +1,16 @@
+/* Cover styling*/
 
 .cover-portfolio {
   background-image: url(../images/header-portfolio.jpg);
+}
+
+/* Content styling*/
+
+.sub-heading {
+  margin-top: 25px;
+  text-decoration:
+}
+
+.img-resize {
+  width: 500px;
 }
