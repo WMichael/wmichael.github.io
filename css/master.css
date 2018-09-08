@@ -7,20 +7,22 @@ body {
 .cover {
   text-align: center;
   height: 600px;
-  padding: 150px; background-size: cover;
+  padding: 150px;
   background-position: top;
   text-shadow: 5px 2px 7px #000000;
+  color: white;
+  background-size: cover;
+  background-position: center;
 }
 
 .cover h1 {
   background-color: rgba(0, 0, 0, 0.50);
   display: inline-block;
   padding: 5px 15px;
+
 }
 
 .cover-home {
-  /* color: #FF3434; */
-  color: white;
   background-image: url(../images/header.jpg);
 }
 
@@ -57,6 +59,7 @@ nav a:hover {
 .content {
   background-color: #d5d5d3;
   border: 1px solid darkgrey;
+  border-top: 3px solid black;
   padding: 5px 10px;
   margin: 20px 0px;
 
@@ -65,7 +68,7 @@ nav a:hover {
 .profile-pic {
   display: block;
   margin: auto;
-  margin-top: 15px;
+  margin-top: 35px;
   width: 200px;
   border: 5px black solid;
 }
