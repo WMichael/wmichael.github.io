@@ -1,105 +1,40 @@
 body {
-  font-family: sans-serif;
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, Geneva, sans-serif;
 }
 
-/* Cover styling*/
-
-.cover {
-  text-align: center;
-  height: 600px;
-  padding: 150px;
-  background-position: top;
-  text-shadow: 5px 2px 7px #000000;
-  color: white;
-  background-size: cover;
-  background-position: center;
+.split {
+    height: 100%; 
+    position: fixed;
+    top: 0;
+    color: white;
 }
 
-.cover h1 {
-  background-color: rgba(0, 0, 0, 0.50);
-  display: inline-block;
-  padding: 5px 15px;
-  border-radius: 5px;
+.left {
+    background-color: #242B3A;
+    left: 0;
+    width: 35%;
 }
 
-.cover-home {
-  background-image: url(../images/header.jpg);
+.right {
+    /* background-color: #269AB5; */
+    right: 0;
+    width: 65%;
 }
 
-/* Navigation styling*/
-
-nav {
-  height: 50px;
-  background-color: #d5d5d3;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content:center;
-  border: 1px solid darkgrey;
+.profilepic {
+    height: 250px;
+    border-radius: 50%;
+    border: black solid 4px;
 }
 
-nav a {
-  padding: 10px 25px;
-  margin: 15px;
-  text-align: center;
-  height: 100%;
-  text-decoration: none;
-  color: black;
-  border: 2px black solid;
-  border-radius: 3px;
-  background-color: darkgrey;
+.socialmedia {
+    text-align: center;
+    margin: 50px;
 }
 
-nav a:hover {
-  color: white;
-  border-color: white;
-}
-
-/* Content styling*/
-.content {
-  background-color: #d5d5d3;
-  border: 1px solid darkgrey;
-  border-top: 3px solid black;
-  padding: 5px 10px;
-  margin: 20px 0px;
-}
-
-.profile-pic {
-  display: block;
-  margin: auto;
-  margin-top: 35px;
-  width: 200px;
-  border: 5px black solid;
-}
-
-.profile-pic:hover {
-  border: 5px solid darkgrey;
-}
-
-.social-media-box {
-  margin: auto;
-  width: 250px;
-  height: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-media-box img {
-  width: 50px;
-}
-
-/* Footer styling*/
-footer {
-  min-height: 20px;
-  /* background-color: darkgrey; */
-  margin-top: 150px;
-  text-align: center;
-}
-
-
-/* Style overiding*/
- .row {
-    justify-content: space-around;
+.icon {
+    width: 50px;
+    height: 50px;
 }
