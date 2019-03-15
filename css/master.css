@@ -1,26 +1,29 @@
 body {
     margin: 0;
+    padding: 0;
     text-align: center;
-    font-family: Verdana, Geneva, sans-serif;
+    font-family: 'Roboto', Verdana, Geneva, sans-serif;
+    position: relative;
+
 }
 
-.split {
-    height: 100%; 
-    position: fixed;
-    top: 0;
-    color: white;
+/* Mobile first CSS */
+h1 {
+    margin-top: 0;
+    padding-top: 15px;
 }
 
 .left {
     background-color: #242B3A;
-    left: 0;
-    width: 35%;
-}
+    color: white; 
+ }
 
 .right {
-    /* background-color: #269AB5; */
-    right: 0;
-    width: 65%;
+    color: black;
+}
+
+.right p {
+    margin: 10px;
 }
 
 .profilepic {
@@ -31,10 +34,29 @@ body {
 
 .socialmedia {
     text-align: center;
-    margin: 50px;
+    padding: 50px;
 }
 
 .icon {
     width: 50px;
     height: 50px;
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .left {
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 35%;
+    }
+    
+    .right {
+        height: 100%; 
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 65%;
+    }
+} 
