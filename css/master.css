@@ -1,16 +1,27 @@
-body {
+html, body {
     margin: 0;
     padding: 0;
     text-align: center;
     font-family: 'Roboto', Verdana, Geneva, sans-serif;
     position: relative;
-
+    height: 100%;
 }
 
 /* Mobile first CSS */
 h1 {
     margin-top: 0;
     padding-top: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.row {
+    height: 100%;
 }
 
 .left {
@@ -34,7 +45,7 @@ h1 {
 
 .socialmedia {
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
 
 .icon {
@@ -42,21 +53,31 @@ h1 {
     height: 50px;
 }
 
+#currentlyWorkingOn { 
+    background-color: rgb(177, 181, 199);
+    color: #242B3A;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+#currentlyWorkingOn h2 {
+    margin-top: 5px;
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 768px) {
+
     .left {
         height: 100%; 
-        position: fixed;
-        top: 0;
-        left: 0;
+        float: left;
         width: 35%;
     }
     
     .right {
         height: 100%; 
-        position: fixed;
-        top: 0;
-        right: 0;
+        float: left;
         width: 65%;
     }
 } 
